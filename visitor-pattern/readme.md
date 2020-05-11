@@ -3,8 +3,9 @@
 ## Name: Bhargav Choudhury
 
 -----------------------------------------------------------------------
+## Description:
+A simple Java program to implement the visitor pattern to run different analytics on the given input. Also used Double Dispatch and Iterator Pattern.
 -----------------------------------------------------------------------
-
 
 Following are the commands and the instructions to run ANT on your project.
 #### Note: build.xml is present in sentencePlay/src folder.
@@ -77,10 +78,6 @@ BUILD SUCCESSFUL
 Total time: 0 seconds
 
 ```
-
------------------------------------------------------------------------
-## Description:
-A simple Java program to implement the visitor pattern to run different analytics on the given input.
 
 -----------------------------------------------------------------------
 ### Academic Honesty statement:
