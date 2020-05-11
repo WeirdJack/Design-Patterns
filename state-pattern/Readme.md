@@ -3,6 +3,10 @@
 ## Name: Bhargav Choudhury
 
 -----------------------------------------------------------------------
+## Description:
+
+A simple Java program to implement the state pattern to capture the changes in spending potential of a person.
+
 -----------------------------------------------------------------------
 
 
@@ -83,10 +87,6 @@ BUILD SUCCESSFUL
 Total time: 0 seconds
 
 ```
-
------------------------------------------------------------------------
-## Description:
-A simple Java program
 
 -----------------------------------------------------------------------
 ### Academic Honesty statement:
