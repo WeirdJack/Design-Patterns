@@ -1,5 +1,9 @@
 # CSX42: Observer Pattern
-## Name: Bhargav Choudhury
+
+```
+Author: Bhargav Choudhury
+e-mail: bchoudh4@binghamton.edu
+```
 
 -----------------------------------------------------------------------
 ## Description:
