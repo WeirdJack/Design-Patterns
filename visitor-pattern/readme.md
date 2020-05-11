@@ -1,6 +1,10 @@
 
 # CSX42: Visitor Pattern
-## Name: Bhargav Choudhury
+
+```
+Author: Bhargav Choudhury
+e-mail: bchoudh4@binghamton.edu
+```
 
 -----------------------------------------------------------------------
 ## Description:
