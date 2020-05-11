@@ -1,0 +1,57 @@
+<project name="sentencePlay" default="compile_all" basedir="..">
+
+    <property name="BUILD.compiler"       value="modern"/>
+    <property name="src"                  value="src"/>
+    <property name="BUILD"                value="src/BUILD"/>
+    <property name="classes"              value="${BUILD}/classes"/>
+
+    <target name="all" depends="compile_all"/>
+
+    <target name="compile_all"
+            depends="sentencePlay"/>
+
+    <target name="clean">
+        <delete dir="${BUILD}"/>
+    </target>
+
+    <!-- Prepare target directories -->
+    <target name="prepare">
+        <mkdir dir="${BUILD}"/>
+        <mkdir dir="${classes}"/>
+    </target>
+
+    <target name="jar">
+        <mkdir dir="${BUILD}/jar"/>
+        <jar destfile="${BUILD}/jar/sentencePlay.jar" basedir="${BUILD}/classes">
+            <manifest>
+                <attribute name="Main-Class" value="driver.Driver"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <!-- ** means all subdirectories as well -->
+    <!-- * means all files in the current directory -->
+    <!-- for just java files use *.java -->
+
+    <target name="sentencePlay" depends="prepare">
+        <javac includeantruntime="false" srcdir="${src}"
+               includes="sentencePlay/**"
+               excludes="**/package.html"
+               destdir="${classes}"
+               classpath="${classes}"
+               debug="on"
+               optimize="on"
+               deprecation="off"/>
+    </target>
+
+    <target name="run" depends="jar">
+        <java jar="${BUILD}/jar/sentencePlay.jar"  fork="true">
+            <arg value="${input}"/> <!-- Name of the input file containing sentences. -->
+            <arg value="${acceptableWordsFile}"/> <!-- Name of the file containing acceptable words. -->
+            <arg value="${k}"/> <!-- Max size of the list containing the most frequent words. Must be > 0. -->
+            <arg value="${topKOutputFile}"/> <!-- Name of the output file to which the top K words are written for each sentence analyzed. So, if there are 5 sentences in the input file, there should be 5 lines in this file. -->
+            <arg value="${spellCheckOutputFile}"/> <!-- Name of the output file to which the possible spelling fixes are written in the previously mentioned format for each word analyzed. -->
+        </java>
+    </target>
+
+</project>
