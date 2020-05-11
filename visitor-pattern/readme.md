@@ -1,5 +1,5 @@
 
-# CSX42: Assignment 5
+# CSX42: Visitor Pattern
 ## Name: Bhargav Choudhury
 
 -----------------------------------------------------------------------
