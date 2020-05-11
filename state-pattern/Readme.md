@@ -1,5 +1,5 @@
 
-# CSX42: Assignment 4
+# CSX42: State Pattern
 ## Name: Bhargav Choudhury
 
 -----------------------------------------------------------------------
