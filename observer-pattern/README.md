@@ -1,7 +1,11 @@
 # CSX42: Observer Pattern
-## Name: 
+## Name: Bhargav Choudhury
 
 -----------------------------------------------------------------------
+## Description:
+
+A Java program to implement the observer pattern by calculating different metrics of a input text file with numbers.
+
 -----------------------------------------------------------------------
 
 
@@ -41,10 +45,6 @@ ant run -buildfile numberPlay/src/build.xml \
 -DtopKNumOutFile="<path of output file to which the top K numbers are written>" \
 -DnumPeaksOutFile="<path of output file to which the peaks in the number stream are written>"
 ```
-
------------------------------------------------------------------------
-## Description:
-
 
 -----------------------------------------------------------------------
 ### Academic Honesty statement:
